@@ -2,26 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --brand-one: 9 89% 67%;
+    --brand-two: 237 72% 19%;
+    --white: 0 0% 100%;
+    --black: 222.2 47.4% 11.2%;
+    --text-one: 229 26% 18%;
+    --text-two: 214 24% 71%;
+    --text-three: 214 33% 96%;
+    --accent-blue: 222 100% 69%;
+    --accent-green: 142 71% 45%;
+    --accent-violet: 261 91% 65%;
+    --accent-yellow: 40 99% 49%;
+
+    --background: var(--white); /* White */
+    --foreground: var(--black); 
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: var(--white); /* White */
+    --popover-foreground: var(--brand-one);
+
+    --card: var(--white); /* White */
+    --card-foreground: var(--brand-one);
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: var(--brand-one);
+    /* --primary: 222.2 47.4% 11.2%; */
+    --primary-foreground: 210 40% 98%;
+
+    /* --secondary: 210 40% 96.1%; */
+    --secondary: 214 33% 96%; /* Text Three */
+    --secondary-foreground: var(--brand-one)
+
+    --accent: 214 33% 96%; /* Text Three */
+    --accent-foreground: var(--brand-one)
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 9 89% 67%; /* Brand One */
+
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
 }
