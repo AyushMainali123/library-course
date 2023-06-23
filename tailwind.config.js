@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: '1.5rem',
       screens: {
-        '2xl': '1400px',
+        'xl': '1130px',
       },
     },
     extend: {
@@ -16,6 +16,7 @@ module.exports = {
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
         background: 'hsl(var(--background))',
+        'background-secondary': 'hsl(var(--background-secondary))',
         foreground: 'hsl(var(--foreground))',
 
         primary: {
@@ -63,6 +64,9 @@ module.exports = {
           violet: 'hsl(var(--accent-violet))',
           yellow: 'hsl(var(--accent-yellow))',
         },
+        grey: {
+          background: 'hsl(var(--grey-background))'
+        }
       },
       fontFamily: {
         sfPro: 'var(--font-sf-pro-display)',

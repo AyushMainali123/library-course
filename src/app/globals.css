@@ -15,8 +15,10 @@
     --accent-green: 142 71% 45%;
     --accent-violet: 261 91% 65%;
     --accent-yellow: 40 99% 49%;
+    --grey-background: 0, 0%, 97%, 1;
 
-    --background: var(--white); /* White */
+    --background: var(--white);
+    --background-secondary: var(--grey-background);
     --foreground: var(--black); 
 
     --muted: 210 40% 96.1%;
@@ -37,10 +39,10 @@
 
     /* --secondary: 210 40% 96.1%; */
     --secondary: 214 33% 96%; /* Text Three */
-    --secondary-foreground: var(--brand-one)
+    --secondary-foreground: var(--brand-one);
 
     --accent: 214 33% 96%; /* Text Three */
-    --accent-foreground: var(--brand-one)
+    --accent-foreground: var(--brand-one);
 
     --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;

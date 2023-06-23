@@ -1,11 +1,13 @@
-import { Button } from '@/components/ui/core/button'
+import Banner from '@/components/pages/landing/banner'
+import Partners from '@/components/pages/landing/partners'
+import Navbar from '@/components/ui/shared/navbar/Navbar'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-sfPro">
-      <h1>Hello World</h1>
-      <Button>Hello From Button</Button>
-      <Button variant={'outline'}>Hello From Button</Button>
+    <main>
+      <Navbar />
+      <Banner />
+      <Partners />
     </main>
   )
 }
