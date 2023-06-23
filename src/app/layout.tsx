@@ -40,12 +40,12 @@ const sfProDisplay = localFont({
       style: 'italic'
     },
      {
-      path: './fonts/SF-Pro-Display-SemiBold.woff',
+      path: './fonts/SF-Pro-Display-Semibold.woff',
       weight: '600',
       style: 'normal',
     },
     {
-      path: './fonts/SF-Pro-Display-SemiBoldItalic.woff',
+      path: './fonts/SF-Pro-Display-SemiboldItalic.woff',
       weight: '600',
       style: 'italic'
     },
