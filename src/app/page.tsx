@@ -1,4 +1,5 @@
 import Banner from '@/components/pages/landing/banner'
+import LearningSteps from '@/components/pages/landing/learning-steps'
 import SpecialFeatures from '@/components/pages/landing/special-features'
 import Partners from '@/components/ui/features/partners'
 import Navbar from '@/components/ui/shared/navbar/Navbar'
@@ -13,6 +14,7 @@ export default function Home() {
           <Partners />
         </div>
         <SpecialFeatures />
+        <LearningSteps />
       </div>
     </main>
   )

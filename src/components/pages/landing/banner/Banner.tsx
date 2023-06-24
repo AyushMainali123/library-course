@@ -5,7 +5,7 @@ import BannerImage from '/public/images/landing/banner.png'
 import PatternImage from '/public/images/landing/pattern.png'
 const Banner = () => {
   return (
-    <section role="banner" className="bg-grey-background">
+    <section role="banner" className="bg-grey-background mb-[70px]">
       <div className="bg-brand-two">
         <section className="container pt-8">
           <HeadingOne className="mb-5  text-white">Find your course Change your life</HeadingOne>
