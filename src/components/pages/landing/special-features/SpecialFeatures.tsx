@@ -5,7 +5,7 @@ import { specialFeaturesData } from './SpecialFeatures.data'
 import BookImage from '/public/images/icons/book.svg'
 const SpecialFeatures = () => {
   return (
-    <section className="bg-grey-background py-">
+    <section className="bg-grey-background pb-[70px]">
       <div className="container">
         <HeadingTwo className="mb-2 text-center">Our Special Features For You</HeadingTwo>
         <BodyTwo className="mb-8 text-center text-text-one">
@@ -16,9 +16,7 @@ const SpecialFeatures = () => {
         <div className="grid grid-cols-2 gap-4">
           {specialFeaturesData.map((data) => (
             <div
-              className={cn(
-                'rounded-[10px] bg-white px-2 py-4 text-center',
-              )}
+              className={cn('rounded-[10px] bg-white px-2 py-4 text-center')}
               style={{ boxShadow: '0px 2.4px 30px 0px rgba(79, 115, 141, 0.06)' }}
               key={data.id}
             >
