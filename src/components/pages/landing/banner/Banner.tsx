@@ -1,7 +1,7 @@
 import { BodyTwo, HeadingOne } from '@/components/ui/core/text'
 import SearchCourse from '@/components/ui/features/form/search-course'
 import Image from 'next/image'
-import BannerImage from '/public/images/landing/banner.png'
+import BannerImage from '/public/images/landing/banner.webp'
 import PatternImage from '/public/images/landing/pattern.png'
 const Banner = () => {
   return (
