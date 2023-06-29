@@ -14,7 +14,7 @@ const Banner = () => {
             dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer.
           </BodyTwo>
           <SearchCourse containerClassName="mt-9 mb-11" />
-          <Image src={BannerImage} alt="Banner" />
+          <Image src={BannerImage} alt="Banner" priority loading="eager" />
         </section>
       </div>
       <div className="relative bottom-8 h-9 w-full bg-transparent">
