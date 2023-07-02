@@ -1,5 +1,8 @@
-import { BodyTwo, HeadingTwo } from '@/components/ui/core/text'
+import { Button } from '@/components/ui/core/button'
+import { BodyTwo, HeadingTwo, subtitleTwoClassName } from '@/components/ui/core/text'
 import EcommerceCard from '@/components/ui/shared/cards/ecommerce'
+import { cn } from '@/lib/utils'
+import Link from 'next/link'
 
 const PopularCourses = () => {
   return (
@@ -11,10 +14,17 @@ const PopularCourses = () => {
           dolore magna aliquam erat volutpat.
         </BodyTwo>
       </div>
-      <div className="flex gap-6 flex-col">
-      <EcommerceCard />
-      <EcommerceCard />
+      <div className="flex flex-col gap-6">
+        <EcommerceCard />
+        <EcommerceCard />
       </div>
+      <Button
+        variant={'link'}
+        className={cn(subtitleTwoClassName, 'mx-auto mt-3 block max-w-fit text-center text-brand-one')}
+        asChild
+      >
+        <Link href={'/'}>View More</Link>
+      </Button>
     </section>
   )
 }
