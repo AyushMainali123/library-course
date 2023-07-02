@@ -16,8 +16,8 @@ const SpecialFeatures = () => {
         <div className="grid grid-cols-2 gap-4">
           {specialFeaturesData.map((data) => (
             <div
-              className={cn('rounded-[10px] bg-white px-2 py-4 text-center')}
-              style={{ boxShadow: '0px 2.4px 30px 0px rgba(79, 115, 141, 0.06)' }}
+              className={cn('rounded-[10px] bg-white px-2 py-4 text-center shadow-[0px_2.4px_30px_0px_rgba(79,115,141,0.06)]')}
+              // style={{ boxShadow: '0px 2.4px 30px 0px rgba(79, 115, 141, 0.06)' }}
               key={data.id}
             >
               <div
